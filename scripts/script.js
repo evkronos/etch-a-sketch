@@ -1,12 +1,12 @@
 const container = document.querySelector("#container");
-const square = document.querySelector("#square");
-
-
-let gridCode = "";
 
 for (let i = 0; i < 2700; i++) {
-    gridCode += "<div id='square'></div>"
+    const div = document.createElement("div")
+    div.setAttribute("id", "square")
+    container.appendChild(div)
 }
 
+const square = document.querySelector("#square")
 
-container.innerHTML = gridCode;
+square.addEventListener('mouseon', () => {
+})

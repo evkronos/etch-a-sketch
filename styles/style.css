@@ -14,3 +14,7 @@
     border: 1px solid blue;
     background: lightblue;
 }
+
+#square .black {
+    background: black;
+}
