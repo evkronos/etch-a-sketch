@@ -6,13 +6,19 @@
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 950px;
+    width: 84.9vh;
+    height: 84.9vh;
     margin: 0 auto;
+    background: red;
+    /* align-items: center;
+    justify-content: center; */
 }
 
 .square {
     border: 1px solid blue;
     background: lightblue;
+    width: calc(80vh / 16);
+    height: calc(80vh / 16);
 }
 
 .square:hover {
