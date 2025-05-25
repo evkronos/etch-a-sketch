@@ -1,5 +1,5 @@
 const container = document.getElementById('grid-container');
-const button = document.getElementById('resize-button');
+const resizeButton = document.getElementById('resize-button');
 
 function createGrid(size) {
     container.innerHTML = ''; // limpa grade antiga
@@ -19,7 +19,7 @@ function createGrid(size) {
     }
 }
 
-button.addEventListener('click', () => {
+resizeButton.addEventListener('click', () => {
     let newSize = prompt('Tamanho da grade (máximo 100):');
     newSize = parseInt(newSize);
     if (newSize && newSize > 0 && newSize <= 100) {
